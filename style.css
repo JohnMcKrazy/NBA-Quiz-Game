@@ -1,0 +1,519 @@
+:root {
+  --white: whitesmoke;
+  --lightBlue: rgb(68, 203, 208);
+  --red: crimson;
+  --purple: darkslateblue;
+  --darkPurple: rgb(27, 21, 66);
+  --darkBlue: darkblue;
+  --orange: #f7934c;
+  --blackColor: rgb(20, 10, 30);
+}
+
+html {
+  font-size: 13px;
+  font-family: 'Georama', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html h1 {
+  font-size: 5rem;
+}
+
+html h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+html h3 {
+  font-size: 2rem;
+}
+
+html h4 {
+  font-size: 1.5rem;
+}
+
+html h5 {
+  font-size: 1.2rem;
+}
+
+html p {
+  font-size: 2.5rem;
+}
+
+/* 
+!GAME CONTAINER START 
+*/
+.game-container {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--darkBlue)), to(var(--purple)));
+  background: linear-gradient(var(--darkBlue), var(--purple));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 
+!GAME INTERFACE START 
+*/
+  /* 
+!GAME INTERFACE OVER 
+*/
+}
+
+.game-container .game-interface {
+  margin: 3rem 0;
+  max-width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--white);
+  /*
+*GENERAL STYLES START
+*/
+  /*
+*GENERAL STYLE OVER
+*/
+  /*
+*TITLE SECTION START
+*/
+  /*
+*TITLE SECTION OVER
+*/
+  /*
+*INTRO CONTAINER START
+*/
+  /*
+*INTRO CONTAINER OVER
+*/
+  /*
+*SELECTOR CONTAINER START
+*/
+  /*
+*SELECTOR CONTAINER OVER
+*/
+  /*
+*INFO CONTAINER START
+*/
+  /*
+*INFO CONTAINER OVER
+*/
+  /*
+*BTNS CONTAINER START
+*/
+  /*
+*BTNS CONTAINER OVER
+*/
+  /*
+*POINTS CONTAINER START
+*/
+  /*
+*POINTS CONTAINER OVER
+*/
+  /*
+*YOURANSWER CONTAINER START
+*/
+  /*
+*YOURANSWER CONTAINER OVER
+*/
+  /*
+*CORRECT ANSWER CONTAINER START
+*/
+  /*
+*CORRECT ANSWER CONTAINER OVER
+*/
+  /*
+*HISTORY CONTAINER START
+*/
+  /*
+*HISTORY CONTAINER OVER
+*/
+}
+
+.game-container .game-interface .title-section,
+.game-container .game-interface .info-container,
+.game-container .game-interface .points-container,
+.game-container .game-interface .yourAnswer-container,
+.game-container .game-interface .correctAnswer-container,
+.game-container .game-interface .history-container {
+  text-align: center;
+  border-bottom: solid 0.2rem var(--purple);
+}
+
+.game-container .game-interface .selector-container,
+.game-container .game-interface .info-container,
+.game-container .game-interface .points-container,
+.game-container .game-interface .yourAnswer-container,
+.game-container .game-interface .correctAnswer-container,
+.game-container .game-interface .history-container {
+  display: none;
+}
+
+.game-container .game-interface .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.game-container .game-interface .title-section .title-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .game-interface .title-section .title-logo .title-game {
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.game-container .game-interface .title-section .title-logo .svg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  margin-left: 1rem;
+}
+
+.game-container .game-interface .title-section .title-logo .svg-container #nba-logo-svg {
+  width: 100%;
+  height: auto;
+}
+
+.game-container .game-interface .title-section .title-logo .svg-container #nba-logo-svg .nba-cls-1 {
+  fill: #1f3d8a;
+}
+
+.game-container .game-interface .title-section .title-logo .svg-container #nba-logo-svg .nba-cls-2 {
+  fill: #e52135;
+}
+
+.game-container .game-interface .title-section .section-text {
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.game-container .game-interface .intro-container {
+  width: 100%;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .game-interface .intro-container .intro-text {
+  color: var(--purple);
+  text-align: center;
+}
+
+.game-container .game-interface .intro-container .subtitle-other-color-text {
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.game-container .game-interface .intro-container #form-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .game-interface .intro-container #form-text .textBoxClass {
+  margin: 1rem 0 0;
+  height: 3rem;
+  width: 100%;
+  background: rgba(176, 196, 222, 0.303);
+  text-align: center;
+  border: none;
+  font-size: 1.7rem;
+  color: var(--purple);
+}
+
+.game-container .game-interface .intro-container #form-text .textBoxClass:focus {
+  outline: 0.1rem solid var(--orange);
+}
+
+.game-container .game-interface .intro-container #form-text ::-webkit-input-placeholder {
+  color: var(--purple);
+  font-size: 1.7rem;
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.game-container .game-interface .intro-container #form-text :-ms-input-placeholder {
+  color: var(--purple);
+  font-size: 1.7rem;
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.game-container .game-interface .intro-container #form-text ::-ms-input-placeholder {
+  color: var(--purple);
+  font-size: 1.7rem;
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.game-container .game-interface .intro-container #form-text ::placeholder {
+  color: var(--purple);
+  font-size: 1.7rem;
+  padding: 1rem;
+  opacity: 0.5;
+}
+
+.game-container .game-interface .selector-container {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.game-container .game-interface .selector-container .welcome-text {
+  color: var(--lightBlue);
+}
+
+.game-container .game-interface .selector-container .welcome-text .yourName-text {
+  color: black;
+}
+
+.game-container .game-interface .selector-container .selector-intro {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  color: var(--purple);
+}
+
+.game-container .game-interface .selector-container .selector-content {
+  width: 100%;
+}
+
+.game-container .game-interface .selector-container .selector-content .selector-game {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-container .game-interface .selector-container .selector-content .selector-game .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 5rem;
+  color: whitesmoke;
+  background: var(--purple);
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.game-container .game-interface .selector-container .selector-content .selector-game .btn:hover {
+  background: var(--darkPurple);
+}
+
+.game-container .game-interface .selector-container .selector-content .selector-game #overBtn,
+.game-container .game-interface .selector-container .selector-content .selector-game #nextBtn,
+.game-container .game-interface .selector-container .selector-content .selector-game #answerBtn {
+  display: none;
+}
+
+.game-container .game-interface .info-container {
+  padding: 2rem;
+}
+
+.game-container .game-interface .info-container .question-text {
+  color: var(--purple);
+}
+
+.game-container .game-interface .info-container #form {
+  width: 100%;
+}
+
+.game-container .game-interface .info-container #form input[type='text'] {
+  width: 90%;
+}
+
+.game-container .game-interface .info-container .radio-options-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding: 2rem;
+}
+
+.game-container .game-interface .info-container .radio-options-container .radio-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.game-container .game-interface .info-container .radio-options-container .radio-option .radio-text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  color: var(--orange);
+}
+
+.game-container .game-interface .btns-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5rem;
+  color: whitesmoke;
+  background: var(--purple);
+  cursor: pointer;
+}
+
+.game-container .game-interface .btns-container .btn:hover {
+  background: var(--darkPurple);
+}
+
+.game-container .game-interface .btns-container #overBtn,
+.game-container .game-interface .btns-container #nextBtn,
+.game-container .game-interface .btns-container #answerBtn {
+  display: none;
+}
+
+.game-container .game-interface .points-counter {
+  color: var(--red);
+}
+
+.game-container .game-interface .yourAnswer-container {
+  padding: 1rem;
+}
+
+.game-container .game-interface .yourAnswer-container .yourAnswer-title {
+  color: var(--blackColor);
+}
+
+.game-container .game-interface .yourAnswer-container .yourAnswer-text {
+  color: var(--orange);
+}
+
+.game-container .game-interface .correctAnswer-container {
+  padding: 1rem;
+}
+
+.game-container .game-interface .correctAnswer-container .correctAnswer-title {
+  color: var(--blackColor);
+}
+
+.game-container .game-interface .correctAnswer-container .correctAnswer-text {
+  color: var(--purple);
+}
+
+.game-container .game-interface .history-container {
+  max-width: 60rem;
+  padding: 2rem;
+}
+
+.game-container .game-interface .history-container .comment-title {
+  color: var(--orange);
+}
+
+/* 
+!GAME CONTAINER OVER 
+*/
+@media (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 6px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
