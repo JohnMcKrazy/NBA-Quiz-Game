@@ -242,6 +242,30 @@
    <!--!SECTION GAME OVER-->
         <script>
             
+const formTwo = document.querySelector('#form');
+const yourAnswerText = document.querySelector('.yourAnswer-text');
+
+const checkBoxItemsByName = formTwo.radioName;
+const checkBoxLength = checkBoxItemsByName.length;
+let myAnswerSelected;
+console.log(checkBoxLength);
+
+
+function checkBoxCheck() {
+    for (count = 0; count < checkBoxLength; count++) {
+        let checked = checkBoxItemsByName[count];
+        let checkedBoxex = checked.checked;
+        let checkedBoxexClassName = checked.className;
+
+        if (checkedBoxex) {
+            console.log(`Your select the option ${checkedBoxexClassName} `);
+            yourAnswerText.textContent = checkedBoxexClassName;
+            
+myAnswerSelected = yourAnswerText.innerHTML;
+console.log(myAnswerSelected);
+        }
+    }
+}
 
 
          
